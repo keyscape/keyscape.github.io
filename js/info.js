@@ -188,7 +188,7 @@
         var team_linkedin = [];
 
         //Member #Cassio
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Cassio Amador");
             team_work.push("Professor Coordenador");
             team_email.push("cassioamador@utfpr.edu.br");
@@ -197,7 +197,7 @@
             team_linkedin.push("#!");
 
         //Member #Mauricio
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Mauricio Takano");
             team_work.push("Professor Cocoordenador");
             team_email.push("takano@utfpr.edu.br");
@@ -206,16 +206,16 @@
             team_linkedin.push("https://www.linkedin.com/in/mauricio-takano-b44965175/");
 
         //Member #Lucas
-        team_image.push("assets/img/1.jpg");
-        team_name.push("Lucas Pinto");
-        team_work.push("Aluno Bolsista");
-        team_email.push("lucaspinto@alunos.utfpr.edu.br");
-        team_lattes.push("https://pradoplucas.github.io/");
-        team_facebook.push("https://www.facebook.com/pradoplucas");
-        team_linkedin.push("https://www.linkedin.com/in/pradoplucas/");
+            team_image.push("assets/img/example.jpg");
+            team_name.push("Lucas Pinto");
+            team_work.push("Aluno Bolsista");
+            team_email.push("lucaspinto@alunos.utfpr.edu.br");
+            team_lattes.push("https://pradoplucas.github.io/");
+            team_facebook.push("https://www.facebook.com/pradoplucas");
+            team_linkedin.push("https://www.linkedin.com/in/pradoplucas/");
 
         //Member #Bianca
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Bianca Andrade");
             team_work.push("Aluna Bolsista");
             team_email.push("biancaandrade@alunos.utfpr.edu.br");
@@ -224,7 +224,7 @@
             team_linkedin.push("#!");
 
         //Member #João
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("João Licorini");
             team_work.push("Aluno da UTFPR");
             team_email.push("licorini@alunos.utfpr.edu.br");
@@ -233,7 +233,7 @@
             team_linkedin.push("https://www.linkedin.com/in/jo%C3%A3o-victor-mariano-licorini-1626a4176/");
 
         //Member #Leandro
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Leandro Bertoldi");
             team_work.push("Aluno da UTFPR");
             team_email.push("leandrobertoldi@alunos.utfpr.edu.br");
@@ -242,24 +242,24 @@
             team_linkedin.push("https://www.linkedin.com/in/leandrocnb/");
 
         //Member #Borba
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Lucas Borba");
             team_work.push("Aluno da UTFPR");
             team_email.push("lucasborba@alunos.utfpr.edu.br");
             team_lattes.push("http://lattes.cnpq.br/9633178385958188");
             team_facebook.push("https://www.facebook.com/lucas.borba.568");
             team_linkedin.push("https://www.linkedin.com/in/lucas-borba-257a7898/");
-
+/*
         //Member #8
-            team_image.push("assets/img/1.jpg");
+            team_image.push("assets/img/example.jpg");
             team_name.push("Thiago Corrêa");
             team_work.push("Aluno da UTFPR");
             team_email.push("thiagocorrea@alunos.utfpr.edu.br");
             team_lattes.push("http://lattes.cnpq.br/6131680182555621");
             team_facebook.push("https://www.facebook.com/profile.php?id=100003477515103");
             team_linkedin.push("https://www.linkedin.com/in/thiago-pereira-1ab54419b/");
-
-        var number_of_members = 8;
+*/
+        var number_of_members = 7;
 
         document.getElementById("team-content").innerHTML = contentTeam(team_image, team_name, team_work, team_email, team_lattes, team_facebook, team_linkedin, number_of_members);
 
