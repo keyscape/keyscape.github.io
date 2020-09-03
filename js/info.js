@@ -31,7 +31,8 @@
         document.getElementById("project-name-menu").innerHTML = name;
 
     //Project Description
-        var description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
+        //var description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
+        var description = "Se você estiver <i>10conectado</i>, dê uma olhada na seção de Contato";
         
         document.getElementById("project-description").innerHTML = description;
 
@@ -384,11 +385,11 @@
             var contact_instagram = "https://www.instagram.com/utfprbg/";
             document.getElementById("contact-instagram").href = contact_instagram;
 
-            var intagram_id = "ig: ";
-            document.getElementById("intagram-id").innerHTML = intagram_id;
+            var instagram_id = "ig: ";
+            document.getElementById("instagram-id").innerHTML = instagram_id;
 
-            var intagram_info = "utfprbg";
-            document.getElementById("intagram-info").innerHTML = intagram_info;
+            var instagram_info = "utfprbg";
+            document.getElementById("instagram-info").innerHTML = instagram_info;
 
 //##############################################################
 //######################### Footer #############################
@@ -398,3 +399,13 @@
         var copyright = "Copyright © 2020 - Lucas do Prado Pinto";
 
         document.getElementById("copyright").innerHTML = copyright;
+
+        var dezconectados_header_1 = "Estudos e pesquisas do MIT (Minha InTuição) indicam que as redes sociais do programa de extensão LUDICO estão diretamente relacionadas com os illuminatis, ",
+            dezconectados_header_2 = "o que foi comprovado pela rede de rádio e televisão VMC (Vozes da Minha Cabeça). Por isso, nós, Paralógicos do movimento \"Liberta EUler\", hackeamos todos eles, ",
+            dezconectados_header_3 = "e relacionamos com as formas geométricas deixadas nas fazendas e sítios online do programa.<br>",
+            dezconectados_header_4 = "Não sabemos por quanto tempo ficará no ar, mas quando obtiverem as informações, parte da resposta estará nesse link abaixo.",
+            dezconectados_link = "https://keyscape.github.io/10conectados/";
+
+        document.getElementById("dezconectados-header").innerHTML = dezconectados_header_1 + dezconectados_header_2 + dezconectados_header_3 + dezconectados_header_4;
+        document.getElementById("dezconectados-link").href = dezconectados_link;
+        document.getElementById("dezconectados-text").innerHTML = dezconectados_link;
