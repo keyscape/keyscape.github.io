@@ -1,3 +1,7 @@
+
+//"site" ou "10c"
+var mode = "site";
+
 //##############################################################
 //###################### Navigation ############################
 //##############################################################
@@ -31,8 +35,14 @@
         document.getElementById("project-name-menu").innerHTML = name;
 
     //Project Description
-        //var description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
-        var description = "Se você estiver <i>10conectado</i>, dê uma olhada na seção de Contato";
+        var description = "";
+        
+        if(mode == "10c"){
+            description = "Se você estiver <i>10conectado</i>, dê uma olhada na seção de Contato";
+        }
+        else{
+            description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
+        }
         
         document.getElementById("project-description").innerHTML = description;
 
@@ -218,7 +228,7 @@
         //Member #Bianca
             team_image.push("assets/img/example.jpg");
             team_name.push("Bianca Andrade");
-            team_work.push("Aluna Bolsista");
+            team_work.push("Aluna da UTFPR");
             team_email.push("biancaandrade@alunos.utfpr.edu.br");
             team_lattes.push("http://lattes.cnpq.br/9165961440383599");
             team_facebook.push("https://www.facebook.com/bianca.deandrade");
@@ -399,13 +409,6 @@
         var copyright = "Copyright © 2020 - Lucas do Prado Pinto";
 
         document.getElementById("copyright").innerHTML = copyright;
-/*
-        var dezconectados_header_1 = "Estudos e pesquisas do MIT (Minha InTuição) indicam que as redes sociais do programa de extensão LUDICO estão diretamente relacionadas com os illuminatis, ",
-            dezconectados_header_2 = "o que foi comprovado pela rede de rádio e televisão VMC (Vozes da Minha Cabeça). Por isso, nós, Paralógicos do movimento \"Liberta EUler\", hackeamos todos eles, ",
-            dezconectados_header_3 = "e relacionamos com as formas geométricas deixadas nas fazendas e sítios online do programa.<br>",
-            dezconectados_header_4 = "Não sabemos por quanto tempo ficará no ar, mas quando obtiverem as informações, parte da resposta estará nesse link abaixo.",
-            dezconectados_link = "https://keyscape.github.io/10conectados/";
-*/
 
             var dezconectados_header_1 = "Saibam e estejam avisados, este projeto de Escape Room, que faz parte do programa de extensão LUDICO, está mentindo para vocês, eles não são quem dizem ser.<br><br>"
             dezconectados_header_2 = "Estudos e pesquisas do MIT (Minha InTuição) indicam que as <span style=\"color: #dc3545;\">redes sociais</span> do programa de extensão LUDICO (que podem ser encontradas logo acima, na <span style=\"color: #dc3545;\">seção de Contato</span>) estão diretamente relacionadas com os illuminatis, ",
@@ -414,8 +417,13 @@
             dezconectados_header_5 = "Não sabemos por quanto tempo tudo ficará no ar, mas quando obtiverem as informações, parte da resposta estará neste link:",
             dezconectados_link = "https://keyscape.github.io/10conectados/";
 
-
         document.getElementById("dezconectados-header").innerHTML = dezconectados_header_1 + dezconectados_header_2 + dezconectados_header_3 + dezconectados_header_4 + dezconectados_header_5;
         document.getElementById("dezconectados-link").href = dezconectados_link;
         document.getElementById("dezconectados-text").innerHTML = dezconectados_link;
 
+        if(mode == "10c"){
+            document.getElementById("dezconectados").style = "";
+        }
+        else{
+            document.getElementById("dezconectados").style = "display: none;";
+        }
