@@ -199,7 +199,7 @@ var mode = "site";
         var team_linkedin = [];
 
         //Member #Cassio
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/cassio_a.jpg");
             team_name.push("Cassio Amador");
             team_work.push("Professor Coordenador");
             team_email.push("cassioamador@utfpr.edu.br");
@@ -208,7 +208,7 @@ var mode = "site";
             team_linkedin.push("#!");
 
         //Member #Mauricio
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/mauricio_t.jpg");
             team_name.push("Mauricio Takano");
             team_work.push("Professor Cocoordenador");
             team_email.push("takano@utfpr.edu.br");
@@ -217,7 +217,7 @@ var mode = "site";
             team_linkedin.push("https://www.linkedin.com/in/mauricio-takano-b44965175/");
 
         //Member #Lucas
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/lucas_p.jpg");
             team_name.push("Lucas Pinto");
             team_work.push("Aluno Bolsista");
             team_email.push("lucaspinto@alunos.utfpr.edu.br");
@@ -226,7 +226,7 @@ var mode = "site";
             team_linkedin.push("https://www.linkedin.com/in/pradoplucas/");
 
         //Member #Bianca
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/bianca_a.jpg");
             team_name.push("Bianca Andrade");
             team_work.push("Aluna da UTFPR");
             team_email.push("biancaandrade@alunos.utfpr.edu.br");
@@ -235,7 +235,7 @@ var mode = "site";
             team_linkedin.push("#!");
 
         //Member #João
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/joao_l.jpg");
             team_name.push("João Licorini");
             team_work.push("Aluno da UTFPR");
             team_email.push("licorini@alunos.utfpr.edu.br");
@@ -244,14 +244,14 @@ var mode = "site";
             team_linkedin.push("https://www.linkedin.com/in/jo%C3%A3o-victor-mariano-licorini-1626a4176/");
 
         //Member #Leandro
-            team_image.push("assets/img/example.jpg");
+            team_image.push("assets/img/team/leandro_b.jpg");
             team_name.push("Leandro Bertoldi");
             team_work.push("Aluno da UTFPR");
             team_email.push("leandrobertoldi@alunos.utfpr.edu.br");
             team_lattes.push("http://lattes.cnpq.br/3965413341533271");
             team_facebook.push("#!");
             team_linkedin.push("https://www.linkedin.com/in/leandrocnb/");
-
+/*
         //Member #Borba
             team_image.push("assets/img/example.jpg");
             team_name.push("Lucas Borba");
@@ -260,7 +260,7 @@ var mode = "site";
             team_lattes.push("http://lattes.cnpq.br/9633178385958188");
             team_facebook.push("https://www.facebook.com/lucas.borba.568");
             team_linkedin.push("https://www.linkedin.com/in/lucas-borba-257a7898/");
-/*
+
         //Member #8
             team_image.push("assets/img/example.jpg");
             team_name.push("Thiago Corrêa");
@@ -270,12 +270,12 @@ var mode = "site";
             team_facebook.push("https://www.facebook.com/profile.php?id=100003477515103");
             team_linkedin.push("https://www.linkedin.com/in/thiago-pereira-1ab54419b/");
 */
-        var number_of_members = 7;
+        var number_of_members = 6;
 
         document.getElementById("team-content").innerHTML = contentTeam(team_image, team_name, team_work, team_email, team_lattes, team_facebook, team_linkedin, number_of_members);
 
         function contentTeam(image, name, work, email, lattes, facebook, linkedin, number) {
-            part_1 = "<div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-member\"><img class=\"mx-auto rounded-circle\" src=\"";
+            part_1 = "<div class=\"col-lg-4 col-md-4 col-sm-6\"><div class=\"team-member\"><img class=\"mx-auto rounded-circle\" src=\"";
             part_2 = "\"><h4>";
             part_3 = "</h4><p class=\"text-black-75 mb-0\">";
             part_4 = "</p><p class=\"fz-muted\"> <a href=\"mailto:";
@@ -406,7 +406,7 @@ var mode = "site";
 //##############################################################
 
     //Copyright
-        var copyright = "Copyright © 2020 - Lucas do Prado Pinto";
+        var copyright = "Copyright © 2021 - Lucas do Prado Pinto";
 
         document.getElementById("copyright").innerHTML = copyright;
 
