@@ -1,4 +1,3 @@
-
 //"site" ou "10c"
 var mode = "site";
 
@@ -7,62 +6,52 @@ var mode = "site";
 //##############################################################
 
     //Project Name
-        var name = "Keyscape";
+        var projectName = "Keyscape";
 
-        document.getElementById("project-title").innerHTML = name;
-        document.getElementById("project-name").innerHTML = name;
+        document.getElementById("projectTitle").innerHTML = projectName;
+        document.getElementById("projectName").innerHTML = projectName;
 
     //Item Section
-        var item_about = "Sobre";
-        var item_portfolio = "Salas";
-        var item_events = "Eventos";
-        var item_team = "Equipe";
-        var item_program = "Programa";
-        var item_contact = "Contato";
+        var itemAbout = "Sobre";
+        var itemPortfolio = "Salas";
+        var itemEvents = "Eventos";
+        var itemTeam = "Equipe";
+        var itemProgram = "Programa";
+        var itemContact = "Contato";
 
-        document.getElementById("item-about").innerHTML = item_about;
-        document.getElementById("item-portfolio").innerHTML = item_portfolio;
-        document.getElementById("item-events").innerHTML = item_events;
-        document.getElementById("item-team").innerHTML = item_team;
-        document.getElementById("item-program").innerHTML = item_program;
-        document.getElementById("item-contact").innerHTML = item_contact;
+        document.getElementById("itemAbout").innerHTML = itemAbout;
+        document.getElementById("itemPortfolio").innerHTML = itemPortfolio;
+        document.getElementById("itemEvents").innerHTML = itemEvents;
+        document.getElementById("itemTeam").innerHTML = itemTeam;
+        document.getElementById("itemProgram").innerHTML = itemProgram;
+        document.getElementById("itemContact").innerHTML = itemContact;
 
 //##############################################################
 //####################### Masthead #############################
 //##############################################################
 
     //Project Name
-        document.getElementById("project-name-menu").innerHTML = name;
+        document.getElementById("projectNameMenu").innerHTML = projectName;
 
     //Project Description
-        var description = "";
+        var description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
         
-        if(mode == "10c"){
+        if(mode == "10c")
             description = "Se você estiver <i>10conectado</i>, dê uma olhada na seção de Contato";
-        }
-        else{
-            description = "O <i>Escape Room</i> como forma de desenvolvimento de habilidades";
-        }
         
-        document.getElementById("project-description").innerHTML = description;
+        document.getElementById("projectDescription").innerHTML = description;
 
 //##############################################################
 //######################### About ##############################
 //##############################################################
 
     //What is a Escape Room?
-        var title_what_is_escape = "O que é um <i>Escape Room</i>?";
-        var what_is_escape = "O <i>Escape Room</i> é uma sala no qual um grupo de participantes precisa desvendar algum mistério, num tempo pré-determinado, através da resolução de quebra-cabeças. Estes quebra-cabeças são de diversos tipos, e estão espalhados pela sala, misturados com outros itens que fazem parte da história criada para um determinado evento.";
-        
-        document.getElementById("title-what-is-escape").innerHTML = title_what_is_escape;
-        document.getElementById("what-is-escape").innerHTML = what_is_escape;
+        document.getElementById("titleWhatIsEscape").innerHTML = "O que é um <i>Escape Room</i>?";
+        document.getElementById("whatIsEscape").innerHTML = "O <i>Escape Room</i> é uma sala no qual um grupo de participantes precisa desvendar algum mistério, num tempo pré-determinado, através da resolução de quebra-cabeças. Estes quebra-cabeças são de diversos tipos, e estão espalhados pela sala, misturados com outros itens que fazem parte da história criada para um determinado evento.";
 
     //Who are we?
-        var title_who_are_we = "Quem somos nós?";
-        var who_are_we = "O projeto faz a criação e apresentação de <i>Escape Rooms</i>, e é desenvolvido por alunos e professores da Universidade Tecnológica Federal do Paraná (UTFPR), câmpus Cornélio Procópio.";
-        
-        document.getElementById("title-who-are-we").innerHTML = title_who_are_we;
-        document.getElementById("who-are-we").innerHTML = who_are_we;
+        document.getElementById("titleWhoAreWe").innerHTML = "Quem somos nós?";
+        document.getElementById("whoAreWe").innerHTML = "O projeto faz a criação e apresentação de <i>Escape Rooms</i>, e é desenvolvido por alunos e professores da Universidade Tecnológica Federal do Paraná (UTFPR), câmpus Cornélio Procópio.";
 
 //##############################################################
 //####################### Portfolio ############################
@@ -71,335 +60,254 @@ var mode = "site";
     //Description of the Rooms
 
         //Amálgama
-            var description_room_amalgama = "Na sala \"Amálgama\", quatro diferentes mundos magicamente se chocam, e os participantes devem se unir para desvendar os mistérios, encontrar sete esferas místicas e devolver a paz em meio ao caos que foi criado.";
-            var theme_amalgama = "";
-            var name_amalgama = "Amálgama";
-
-            document.getElementById("room-amalgama").title = description_room_amalgama;
-            document.getElementById("theme-amalgama").innerHTML = theme_amalgama;
-            document.getElementById("name-amalgama").innerHTML = name_amalgama;
+            document.getElementById("roomAmalgama").title = "Na sala \"Amálgama\", quatro diferentes mundos magicamente se chocam, e os participantes devem se unir para desvendar os mistérios, encontrar sete esferas místicas e devolver a paz em meio ao caos que foi criado.";
+            document.getElementById("themeAmalgama").innerHTML = "";
+            document.getElementById("nameAmalgama").innerHTML = "Amálgama";
 
         //Amarelos
-            var description_room_amarelos = "Na sala \"Amarelos\", um grupo de viajantes do tempo precisa descobrir um importante mistério que pode mudar a história.";
-            var theme_amarelos = "";
-            var name_amarelos = "Amarelos";
-
-            document.getElementById("room-amarelos").title = description_room_amarelos;
-            document.getElementById("theme-amarelos").innerHTML = theme_amarelos;
-            document.getElementById("name-amarelos").innerHTML = name_amarelos;
+            document.getElementById("roomAmarelos").title = "Na sala \"Amarelos\", um grupo de viajantes do tempo precisa descobrir um importante mistério que pode mudar a história.";
+            document.getElementById("themeAmarelos").innerHTML = "";
+            document.getElementById("nameAmarelos").innerHTML = "Amarelos";
 
         //Missing
-            var description_room_missing = "Na sala \"Missing\", um rapaz foge de casa, e os participantes precisam descobrir o porquê, e para onde ele foi.";
-            var theme_missing = "";
-            var name_missing = "<i>Missing</i>";
-
-            document.getElementById("room-missing").title = description_room_missing;
-            document.getElementById("theme-missing").innerHTML = theme_missing;
-            document.getElementById("name-missing").innerHTML = name_missing;
+            document.getElementById("roomMissing").title = "Na sala \"Missing\", um rapaz foge de casa, e os participantes precisam descobrir o porquê, e para onde ele foi.";
+            document.getElementById("themeMissing").innerHTML = "";
+            document.getElementById("nameMissing").innerHTML = "<i>Missing</i>";
 
         //Quarentena
-            var description_room_quarentena = "Na sala \"Quarentena\", um grupo de pesquisadores precisa encontrar um antídoto para uma infecção que já pode ter atacado um deles.";
-            var theme_quarentena = "";
-            var name_quarentena = "Quarentena";
+            document.getElementById("roomQuarentena").title = "Na sala \"Quarentena\", um grupo de pesquisadores precisa encontrar um antídoto para uma infecção que já pode ter atacado um deles.";
+            document.getElementById("themeQuarentena").innerHTML = "";
+            document.getElementById("nameQuarentena").innerHTML = "Quarentena";
 
-            document.getElementById("room-quarentena").title = description_room_quarentena;
-            document.getElementById("theme-quarentena").innerHTML = theme_quarentena;
-            document.getElementById("name-quarentena").innerHTML = name_quarentena;
+        //10c
+            document.getElementById("room10c").title = "Na sala \"10Conectados\", um grupo, de maneira online, deve investigar as causas que lavaram uma Inteligência Artificial a apresentar problemas.";
+            document.getElementById("theme10c").innerHTML = "";
+            document.getElementById("name10c").innerHTML = "10Conectados";
+
+        //Future
+            document.getElementById("roomFuture").title = "Na futura sala presencial, o grupo se encontrará em um local totalmente ambientado com temas relacionados ao terror.";
+            document.getElementById("themeFuture").innerHTML = "";
+            document.getElementById("nameFuture").innerHTML = "Futura Sala Presencial";
 
 //##############################################################
 //######################## Events ##############################
 //##############################################################
 
     //Section Name
-        document.getElementById("events-section").innerHTML = item_events;
+        document.getElementById("eventsSection").innerHTML = itemEvents;
 
     //Events Content
-        var event_day = [];
-        var event_local = [];
-        var event_time = [];
-        var event_room = [];
+        var eventsInfo = [],
+            eventsText = "";
 
+        /*
         //Event #1
-            event_day.push(""); //Exemplo: "DD/MM"
-            event_local.push(""); //Exemplo: "UTFPR-CP"
-            event_time.push(""); //Exemplo: "13h às 18h"
-            event_room.push(""); //Exemplo: "Quarentena"
+            eventsInfo.push({day: "",    //Exemplo: "DD/MM"
+                            local: "",  //Exemplo: "UTFPR-CP"
+                            time: "",   //Exemplo: "13h às 18h"
+                            room: ""}); //Exemplo: "Quarentena"
+        */
 
-        //Event #2
-            event_day.push("");
-            event_local.push("");
-            event_time.push("");
-            event_room.push("");
-
-        //Event #3
-            event_day.push("");
-            event_local.push("");
-            event_time.push("");
-            event_room.push("");
-
-        var number_of_events = 0;
-
-        document.getElementById("events-content").innerHTML = contentEvents(event_day, event_local, event_time, event_room, number_of_events);
-       
-        function contentEvents(day, local, time, room, number) {
-            if(number == 0) {
-                return "<div class=\"col-lg-6 col-md-8 text-center\"><h2 class=\"text-uppercase text-gray\">Não há eventos programados.</h2></div>";
-            }
-
-            else {
-
-                var part_1 = "<div class=\"col-lg-4 col-md-12 mb-4 mb-lg-0 text-center\"><div><h2 class=\"section-heading text-black\" style=\"font-size: 4rem;\">";
-                var part_2 = "</h2><div><span class=\"text-dark h5\">Local: </span> <span class=\"text-gray h5\">";
-                var part_3 = "</span></div><div><span class=\"text-dark h5\">Horário: </span> <span class=\"text-gray h5\">";
-                var part_4 = "</span></div><div><span class=\"text-dark h5\">Sala: </span> <span class=\"text-gray h5\">";
-                var part_5 = "</span></div></div></div>"
-
-                var result_text = "";
-
-                var events;
-
-                for(events = 0; events < number; events ++) {
-                    result_text += part_1;
-
-                    result_text += day[events];
-                    
-                    result_text += part_2;
-                    
-                    result_text += local[events];
-                    
-                    result_text += part_3;
-
-                    result_text += time[events];
-                    
-                    result_text += part_4;
-                    
-                    result_text += room[events];
-                    
-                    result_text += part_5;
-                }
-
-                return result_text;
-            }
+        if(eventsInfo.length == 0){
+            eventsText += "<div class=\"col-lg-6 col-md-8 text-center\"><h2 class=\"text-uppercase text-gray\">";
+            eventsText += "Não há eventos programados.";
+            eventsText += "</h2></div>";
         }
+
+        for(events in eventsInfo){
+            eventsText += "<div class=\"col-lg-4 col-md-12 mb-4 mb-lg-0 text-center\"><div><h2 class=\"section-heading text-black\" style=\"font-size: 4rem;\">";
+
+            eventsText += eventsInfo[events].day;
+            
+            eventsText += "</h2><div><span class=\"text-dark h5\">Local: </span> <span class=\"text-gray h5\">";
+            
+            eventsText += eventsInfo[events].local;
+            
+            eventsText += "</span></div><div><span class=\"text-dark h5\">Horário: </span> <span class=\"text-gray h5\">";
+
+            eventsText += eventsInfo[events].time;
+            
+            eventsText += "</span></div><div><span class=\"text-dark h5\">Sala: </span> <span class=\"text-gray h5\">";
+            
+            eventsText += eventsInfo[events].room;
+            
+            eventsText += "</span></div></div></div>";
+        }
+
+        document.getElementById("eventsContent").innerHTML = eventsText;
 
 //##############################################################
 //######################### Team ###############################
 //##############################################################
 
     //Section Name
-        document.getElementById("team-section").innerHTML = item_team;
+        document.getElementById("teamSection").innerHTML = itemTeam;
 
     //Team Members
-        var team_image = [];
-        var team_name = [];
-        var team_work = [];
-        var team_email = [];
-        var team_lattes = [];
-        var team_facebook = [];
-        var team_linkedin = [];
+        var teamInfo = [],
+            teamText = "";
 
         //Member #Cassio
-            team_image.push("assets/img/team/cassio_a.jpg");
-            team_name.push("Cassio Amador");
-            team_work.push("Professor Coordenador");
-            team_email.push("cassioamador@utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/6506728481019083");
-            team_facebook.push("https://www.facebook.com/profile.php?id=642033143");
-            team_linkedin.push("#!");
+        teamInfo.push({ image:  "assets/img/team/cassio_a.jpg",
+                        name:   "Cassio Amador",
+                        work:   "Professor Coordenador",
+                        email:  "cassioamador@utfpr.edu.br",
+                        lattes: "http://lattes.cnpq.br/6506728481019083",
+                        fb:     "https://www.facebook.com/profile.php?id=642033143",
+                        lk:     "#!"});
 
         //Member #Mauricio
-            team_image.push("assets/img/team/mauricio_t.jpg");
-            team_name.push("Mauricio Takano");
-            team_work.push("Professor Cocoordenador");
-            team_email.push("takano@utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/3097222596929672");
-            team_facebook.push("https://www.facebook.com/Mauricio.Iwama");
-            team_linkedin.push("https://www.linkedin.com/in/mauricio-takano-b44965175/");
+        teamInfo.push({ image:  "assets/img/team/mauricio_t.jpg",
+                        name:   "Mauricio Takano",
+                        work:   "Professor Cocoordenador",
+                        email:  "takano@utfpr.edu.br",
+                        lattes: "http://lattes.cnpq.br/3097222596929672",
+                        fb:     "https://www.facebook.com/Mauricio.Iwama",
+                        lk:     "https://www.linkedin.com/in/mauricio-takano-b44965175/"});
 
         //Member #Lucas
-            team_image.push("assets/img/team/lucas_p.jpg");
-            team_name.push("Lucas Pinto");
-            team_work.push("Aluno Bolsista");
-            team_email.push("lucaspinto@alunos.utfpr.edu.br");
-            team_lattes.push("https://pradoplucas.github.io/");
-            team_facebook.push("https://www.facebook.com/pradoplucas");
-            team_linkedin.push("https://www.linkedin.com/in/pradoplucas/");
+        teamInfo.push({ image:  "assets/img/team/lucas_p.jpg",
+                        name:   "Lucas Pinto",
+                        work:   "Aluno Bolsista",
+                        email:  "lucaspinto@alunos.utfpr.edu.br",
+                        lattes: "https://pradoplucas.github.io/",
+                        fb:     "https://www.facebook.com/pradoplucas",
+                        lk:     "https://www.linkedin.com/in/pradoplucas/"});
 
         //Member #Bianca
-            team_image.push("assets/img/team/bianca_a.jpg");
-            team_name.push("Bianca Andrade");
-            team_work.push("Aluna da UTFPR");
-            team_email.push("biancaandrade@alunos.utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/9165961440383599");
-            team_facebook.push("https://www.facebook.com/bianca.deandrade");
-            team_linkedin.push("#!");
+        teamInfo.push({ image:  "assets/img/team/bianca_a.jpg",
+                        name:   "Bianca Andrade",
+                        work:   "Aluna da UTFPR",
+                        email:  "biancaandrade@alunos.utfpr.edu.br",
+                        lattes: "http://lattes.cnpq.br/9165961440383599",
+                        fb:     "https://www.facebook.com/bianca.deandrade",
+                        lk:     "#!"});
 
-        //Member #João
-            team_image.push("assets/img/team/joao_l.jpg");
-            team_name.push("João Licorini");
-            team_work.push("Aluno da UTFPR");
-            team_email.push("licorini@alunos.utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/6617320107975336");
-            team_facebook.push("https://www.facebook.com/joao.licorini");
-            team_linkedin.push("https://www.linkedin.com/in/jo%C3%A3o-victor-mariano-licorini-1626a4176/");
+        //Member #Jean
+        teamInfo.push({ image:  "assets/img/team/example.jpg",
+                        name:   "Jean Rocha",
+                        work:   "Aluno da UTFPR",
+                        email:  "@alunos.utfpr.edu.br",
+                        lattes: "#!",
+                        fb:     "#!",
+                        lk:     "#!"});
+     
+        //Member #Mariana
+        teamInfo.push({ image:  "assets/img/team/example.jpg",
+                        name:   "Mariana Figueiredo",
+                        work:   "Aluna da UTFPR",
+                        email:  "marianagomes@alunos.utfpr.edu.br",
+                        lattes: "#!",
+                        fb:     "#!",
+                        lk:     "#!"});
 
-        //Member #Leandro
-            team_image.push("assets/img/team/leandro_b.jpg");
-            team_name.push("Leandro Bertoldi");
-            team_work.push("Aluno da UTFPR");
-            team_email.push("leandrobertoldi@alunos.utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/3965413341533271");
-            team_facebook.push("#!");
-            team_linkedin.push("https://www.linkedin.com/in/leandrocnb/");
-/*
-        //Member #Borba
-            team_image.push("assets/img/example.jpg");
-            team_name.push("Lucas Borba");
-            team_work.push("Aluno da UTFPR");
-            team_email.push("lucasborba@alunos.utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/9633178385958188");
-            team_facebook.push("https://www.facebook.com/lucas.borba.568");
-            team_linkedin.push("https://www.linkedin.com/in/lucas-borba-257a7898/");
+        //Member #Iori
+        teamInfo.push({ image:  "assets/img/team/example.jpg",
+                        name:   "Iori Pitoli",
+                        work:   "Aluno da UTFPR",
+                        email:  "ioripitoli@alunos.utfpr.edu.br",
+                        lattes: "#!",
+                        fb:     "#!",
+                        lk:     "#!"});
 
-        //Member #8
-            team_image.push("assets/img/example.jpg");
-            team_name.push("Thiago Corrêa");
-            team_work.push("Aluno da UTFPR");
-            team_email.push("thiagocorrea@alunos.utfpr.edu.br");
-            team_lattes.push("http://lattes.cnpq.br/6131680182555621");
-            team_facebook.push("https://www.facebook.com/profile.php?id=100003477515103");
-            team_linkedin.push("https://www.linkedin.com/in/thiago-pereira-1ab54419b/");
-*/
-        var number_of_members = 6;
+        //Member #Gabriel
+        teamInfo.push({ image:  "assets/img/team/example.jpg",
+                        name:   "Gabriel Torres",
+                        work:   "Aluno da UTFPR",
+                        email:  "gabtor@alunos.utfpr.edu.br",
+                        lattes: "#!",
+                        fb:     "#!",
+                        lk:     "#!"});
 
-        document.getElementById("team-content").innerHTML = contentTeam(team_image, team_name, team_work, team_email, team_lattes, team_facebook, team_linkedin, number_of_members);
+        for(person in teamInfo){
+            teamText += "<div class=\"col-lg-3 col-md-4 col-sm-6\"><div class=\"team-member\"><img class=\"mx-auto rounded-circle\" src=\"";
 
-        function contentTeam(image, name, work, email, lattes, facebook, linkedin, number) {
-            part_1 = "<div class=\"col-lg-4 col-md-4 col-sm-6\"><div class=\"team-member\"><img class=\"mx-auto rounded-circle\" src=\"";
-            part_2 = "\"><h4>";
-            part_3 = "</h4><p class=\"text-black-75 mb-0\">";
-            part_4 = "</p><p class=\"fz-muted\"> <a href=\"mailto:";
-            part_5 = "\">";
-            part_6 = "</a> </p><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
-            part_7 = "\"><i class=\"fas fa-user\"></i></a><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
-            part_8 = "\"><i class=\"fab fa-facebook-f\"></i></a><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
-            part_9 = "\"><i class=\"fab fa-linkedin-in\"></i></a></div></div>";
+            teamText += teamInfo[person].image;
 
-            var result_text = "";
+            teamText += "\"><h4>";
 
-            var members;
+            teamText += teamInfo[person].name;
 
-            for(members = 0; members < number; members++) {
-                result_text += part_1;
+            teamText += "</h4><p class=\"text-black-75 mb-0\">";
 
-                result_text += image[members];
+            teamText += teamInfo[person].work;
 
-                result_text += part_2;
+            teamText += "</p><p class=\"fz-muted\"> <a href=\"mailto:";
 
-                result_text += name[members];
+            teamText += teamInfo[person].email;
 
-                result_text += part_3;
+            teamText += "\">";
 
-                result_text += work[members];
+            teamText += teamInfo[person].email;
 
-                result_text += part_4;
+            teamText += "</a> </p><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
 
-                result_text += email[members];
+            teamText += teamInfo[person].lattes;
 
-                result_text += part_5;
+            teamText += "\"><i class=\"fas fa-user\"></i></a><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
 
-                result_text += email[members];
+            teamText += teamInfo[person].facebook;
 
-                result_text += part_6;
+            teamText += "\"><i class=\"fab fa-facebook-f\"></i></a><a class=\"btn btn-dark btn-social mx-2\" target=\"_blank\" href=\"";
 
-                result_text += lattes[members];
+            teamText += teamInfo[person].linkedin;
 
-                result_text += part_7;
-
-                result_text += facebook[members];
-
-                result_text += part_8;
-
-                result_text += linkedin[members];
-
-                result_text += part_9;
-        
-            }
-
-            return result_text;
+            teamText += "\"><i class=\"fab fa-linkedin-in\"></i></a></div></div>";
         }
+
+        document.getElementById("teamContent").innerHTML = teamText;
+
 
 //##############################################################
 //######################## Program #############################
 //##############################################################
 
     //Section Name
-        document.getElementById("program-section").innerHTML = item_program;
+        document.getElementById("programSection").innerHTML = itemProgram;
 
     //Program Description
-        var program_description = "O <b>LUDICO</b> - Laboratório Universitário de Desenvolvimento de Inteligências e Cognições, é um programa de extensão da Universidade Tecnológica Federal do Paraná (UTFPR), tendo como objetivo desenvolver capacidades de aprendizagem nos participantes, melhorando também sua aptidão em raciocínio lógico, análise crítica de ações e de pontos de vista, organização e em relações interpessoais.<br>O programa tem como vertente três projetos de extensão.";
-
-        document.getElementById("program-description").innerHTML = program_description;
+        document.getElementById("programDescription").innerHTML = "O <b>LUDICO</b> - Laboratório Universitário de Desenvolvimento de Inteligências e Cognições, é um programa de extensão da Universidade Tecnológica Federal do Paraná (UTFPR), tendo como objetivo desenvolver capacidades de aprendizagem nos participantes, melhorando também sua aptidão em raciocínio lógico, análise crítica de ações e de pontos de vista, organização e em relações interpessoais.<br>O programa tem como vertente três projetos de extensão.";
 
         //Board Games
-            var image_bd = "assets/img//logos/logo_bd.png";
-            var name_bd = "Board Games";
-
-            document.getElementById("image-bd").src = "assets/img//logos/logo_bd.png";
-            document.getElementById("name-bd").innerHTML = name_bd;
+            document.getElementById("imageBD").src = "assets/img//logos/logo_bd.png";
+            document.getElementById("nameBD").innerHTML = "Board Games";
 
         //Escape Room
-            var image_escape = "assets/img//logos/logo_escape.png";
-            var name_escape = "Escape Room";
-
-            document.getElementById("image-escape").src = image_escape;
-            document.getElementById("name-escape").innerHTML = name_escape;
+            document.getElementById("imageEscape").src = "assets/img//logos/logo_escape.png";
+            document.getElementById("nameEscape").innerHTML = "Escape Room";
 
         //RPG
-            var image_rpg = "assets/img//logos/logo_rpg.png";
-            var name_rpg = "RPG";
-
-            document.getElementById("image-rpg").src = image_rpg;
-            document.getElementById("name-rpg").innerHTML = name_rpg;
+            document.getElementById("imageRPG").src = "assets/img//logos/logo_rpg.png";
+            document.getElementById("nameRPG").innerHTML = "RPG";
 
 //##############################################################
 //######################## Contact #############################
 //##############################################################
 
     //Section Name
-        document.getElementById("contact-section").innerHTML = item_contact;
+        document.getElementById("contactSection").innerHTML = itemContact;
 
     //Contact Description
-        var contact_description = "Caso tenha alguma dúvida, entre em contato com algum integrante da equipe, ou mande uma mensagem através das nossas redes sociais abaixo.";
-
-        document.getElementById("contact-description").innerHTML = contact_description;
+        document.getElementById("contactDescription").innerHTML = "Caso tenha alguma dúvida, entre em contato com algum integrante da equipe, ou mande uma mensagem através das nossas redes sociais abaixo.";
 
         //Facebook
-            var contact_facebook = "https://www.facebook.com/UTFPR.BG";
-            document.getElementById("contact-facebook").href = contact_facebook;
-
-            var facebook_id = "fb: ";
-            document.getElementById("facebook-id").innerHTML = facebook_id;
-
-            var facebook_info = "utfpr.bg";
-            document.getElementById("facebook-info").innerHTML = facebook_info;
-
-        //Blog
-            var contact_blog = "http://utfprbg.cp.utfpr.edu.br/";
-            document.getElementById("contact-blog").href = contact_blog;
-
-            var blog_info = "Blog Oficial";
-            document.getElementById("blog-info").innerHTML = blog_info;
+            document.getElementById("contactFB").href = "https://www.facebook.com/UTFPR.BG";
+            document.getElementById("FBID").innerHTML = "fb: ";
+            document.getElementById("FBInfo").innerHTML = "utfpr.bg";
 
         //Instagram
-            var contact_instagram = "https://www.instagram.com/utfprbg/";
-            document.getElementById("contact-instagram").href = contact_instagram;
+            document.getElementById("contactIG").href = "https://www.instagram.com/utfprbg/";
+            document.getElementById("IGID").innerHTML = "ig: ";
+            document.getElementById("IGInfo").innerHTML = "utfprbg";
 
-            var instagram_id = "ig: ";
-            document.getElementById("instagram-id").innerHTML = instagram_id;
+        //YouTube
+            document.getElementById("contactYT").href = "https://www.youtube.com/channel/UCqcpWlEoW3Vh-7ivKnnfsLg";
+            document.getElementById("YTID").innerHTML = "yt: ";
+            document.getElementById("YTInfo").innerHTML = "UTFPRBG";
 
-            var instagram_info = "utfprbg";
-            document.getElementById("instagram-info").innerHTML = instagram_info;
+        //Blog
+            document.getElementById("contactBlog").href = "http://utfprbg.cp.utfpr.edu.br/";
+            document.getElementById("blogInfo").innerHTML = "Blog Oficial";
 
 //##############################################################
 //######################### Footer #############################
@@ -410,20 +318,21 @@ var mode = "site";
 
         document.getElementById("copyright").innerHTML = copyright;
 
-            var dezconectados_header_1 = "Saibam e estejam avisados, este projeto de Escape Room, que faz parte do programa de extensão LUDICO, está mentindo para vocês, eles não são quem dizem ser.<br><br>"
-            dezconectados_header_2 = "Estudos e pesquisas do MIT (Minha InTuição) indicam que as <span style=\"color: #dc3545;\">redes sociais</span> do programa de extensão LUDICO (que podem ser encontradas logo acima, na <span style=\"color: #dc3545;\">seção de Contato</span>) estão diretamente relacionadas com os illuminatis, ",
-            dezconectados_header_3 = "o que foi comprovado pela rede de rádio e televisão VMC-TV (Vozes da Minha Cabeça - TV). Por isso, nós <span style=\"color: #000000; font-weight: bold;\">Paralógicos</span>, do movimento \"Liberta Eu(ler)\", hackeamos todas as redes sociais do LUDICO, e relacionamos as <span style=\"color: #dc3545;\">formas geométricas</span> deixadas nas fazendas e sítios online do programa.<br><br>",
-            dezconectados_header_4 = "Espero que entendam, não queremos o mal de Euler, queremos libertá-lo das garras da Expoente.<br><br>",
-            dezconectados_header_5 = "Não sabemos por quanto tempo tudo ficará no ar, mas quando obtiverem as informações, parte da resposta estará neste link:",
-            dezconectados_link = "https://keyscape.github.io/10conectados/";
-
-        document.getElementById("dezconectados-header").innerHTML = dezconectados_header_1 + dezconectados_header_2 + dezconectados_header_3 + dezconectados_header_4 + dezconectados_header_5;
-        document.getElementById("dezconectados-link").href = dezconectados_link;
-        document.getElementById("dezconectados-text").innerHTML = dezconectados_link;
-
         if(mode == "10c"){
+            var dezconectadosText = "";
+
+            dezconectadosText += "<div class=\"text-dark\"></div>";
+
+            dezconectadosText += "Saibam e estejam avisados, este projeto de Escape Room, que faz parte do programa de extensão LUDICO, está mentindo para vocês, eles não são quem dizem ser.<br><br>";
+            dezconectadosText += "Estudos e pesquisas do MIT (Minha InTuição) indicam que as <span style=\"color: #dc3545;\">redes sociais</span> do programa de extensão LUDICO (que podem ser encontradas logo acima, na <span style=\"color: #dc3545;\">seção de Contato</span>) estão diretamente relacionadas com os illuminatis, ";
+            dezconectadosText += "o que foi comprovado pela rede de rádio e televisão VMC-TV (Vozes da Minha Cabeça - TV). Por isso, nós <span style=\"color: #000000; font-weight: bold;\">Paralógicos</span>, do movimento \"Liberta Eu(ler)\", hackeamos todas as redes sociais do LUDICO, e relacionamos as <span style=\"color: #dc3545;\">formas geométricas</span> deixadas nas fazendas e sítios online do programa.<br><br>";
+            dezconectadosText += "Espero que entendam, não queremos o mal de Euler, queremos libertá-lo das garras da Expoente.<br><br>";
+            dezconectadosText += "Não sabemos por quanto tempo tudo ficará no ar, mas quando obtiverem as informações, parte da resposta estará neste link:";
+
+            dezconectadosText += "</div><br><br><a style=\"color: #007bff\" target=\"_blank\"";
+
+            dezconectadosText += "href=\"https://keyscape.github.io/euclidesModule/\">https://keyscape.github.io/euclidesModule/</a>";
+
+            document.getElementById("dezconectados").innerHTML = dezconectadosText;
             document.getElementById("dezconectados").style = "";
-        }
-        else{
-            document.getElementById("dezconectados").style = "display: none;";
         }
